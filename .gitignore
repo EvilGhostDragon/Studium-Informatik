@@ -1,0 +1,12 @@
+
+2019-WS/.VSCode-linux-x64/
+
+*.aux
+
+*.log
+
+2019-WS/Mitschrift.synctex.gz
+
+2019-WS/Mitschrift.toc
+
+2019-WS/Mitschrift.pdf
