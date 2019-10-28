@@ -1,0 +1,26 @@
+1)
+Linux Mint 19.2 Cinnamon
+
+2)
+Allgemein: GCC - GNU Compiler Collection
+Befehl gcc: GNU C Compiler
+-> somit ist gcc als C Compliler zu verstehen.
+C Source Code muss, um auf einem System ausgeführt werden zu können, zuerst compiliert werden -> gcc
+
+Alternativen: zB clang auf MacOS
+
+3)
+$gcc --version
+  gcc (Ubuntu 7.4.0-1ubuntu1~18.04.1) 7.4.0
+  Copyright (C) 2017 Free Software Foundation, Inc.
+  This is free software; see the source for copying conditions.  There is NO
+  warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+-> Version: 7.4.0
+
+4)
+Neuste Version meines OS wurde mit der neusten gcc version übersetzt:
+$ dmesg | head -1
+ Linux version 5.3.5-050305-generic (kernel@sita) (gcc version 9.2.1 20190909 (Ubuntu 9.2.1-8ubuntu1))
+
+-> vgl. Wikipedia: v9.2

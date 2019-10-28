@@ -1,0 +1,14 @@
+bool bIsFull
+Es werden nicht mehr als 2 Zustände benötigt (in stdbool lib)
+
+float fWeight
+Es werden Kommerzahlen benötigt. 
+
+unsigned short usCup
+Es werden positive ganze Zahlen benötigt. Annahme: es werden nicht mehr als 65,535 Tassen getrunken
+
+char cMark
+Ein Buchstabe wird benötigt
+
+unsigned long ulDistance
+Sehr große positive Zahlen
