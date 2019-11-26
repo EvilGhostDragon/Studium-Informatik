@@ -19,7 +19,8 @@ int fill(int array[], int length) {
 }
 
 void reverse(int array[], int length) {
-	int revArray[length];
+	int revArray[length]; // vermeiden - alt. unknown
+
 	dump(array, length);
 
 	for (int i = 0; i < length; i++) {

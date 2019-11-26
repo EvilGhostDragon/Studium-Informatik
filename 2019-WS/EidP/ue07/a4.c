@@ -12,12 +12,19 @@ void swap(int array[], int pos) {
 	array[pos + 1] = temp;
 }
 
+void swap_new(int *x, int *y) {
+	int temp = *x;
+	*x = *y;
+	*y = temp;
+}
+
 void bubbleSort(int array[], int n) {
 	for (int i = 0; i < n - 1; i++)
 		for (int ii = 0; ii < n - i - 1; ii++)
 			if (array[ii] > array[ii + 1]) {
 				printArray(array, 5);
-				swap(array, ii);
+				// swap(array, ii);
+				swap_new(&array[ii], &array[ii + 1]);
 			}
 }
 
