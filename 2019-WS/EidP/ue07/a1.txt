@@ -1,0 +1,28 @@
+(a):
+f1 ja -> Aufruf von f2 in f1 nicht möglich, da f1 über f2 steht
+
+(b):
+a: Global und als erstes initialisiert
+
+(c):
+
+i = 1, f = 4, y = 3 
+erst nach return von b i++ -> f = 0 + 1 + 3 = 4
+in b i++ -> i=1
+y nicht verändert -> y = 3
+
+z(): 1 1 
+3/2 -> 1
+3/2 -> 1
+=> i = n -> break
+
+
+
+i = 4, f = 33, z = 20.5 
+erst nach return von b i++ -> f = 3 + 10 + 20 = 33
+in b i++ -> i=4
+z als float -> 20.5
+
+
+z(): 1 1
+Wiederholung

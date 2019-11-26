@@ -1,0 +1,92 @@
+4 * 7 / 3
+Wert: 9     Type: int
+
+2.0 * 4 / 5
+Wert: 1.6   Type: double
+
+3 * 6 % 2
+Wert: 0     Type: int
+
+INT_MIN  - 1
+Wert: 2147483647 (compiler: Integer overflow)  Type: Int
+
+(long)INT_MIN  - 1
+Wert: -2147483649   Type: long
+
+(short)INT_MIN  - 1
+Wert: -1    Type: int
+
+(double)41 / 17     
+Wert: ~ 2,4118    Type: double
+
+(double)(41 / 17)
+Wert: 2.0   Type: double
+
+41 / (double)17
+Wert: ~ 2,4118    Type: double
+
+5.0
+Wert: 5.0   Type: double
+
+5.0f
+Wert: 5.0   Type: float
+
+5.0e
+Wert: Undefiniert (Fehler, kein Exponent) -> 5.0e0 = 5.0    Type: double
+
+5.0e-2 * .02
+Wert: 0.001   Type: double
+
+5.0e-2 * .02f
+Wert: 0.001   Type: double
+
+5.0e-2f * .02f
+Wert: 0.001   Type: float
+
+0xFF
+Wert: 255 (Hex -> Dec)   Type: int
+
+017
+Wert: 15 (Oct -> Dec)   Type: int
+
+2.0f * 017
+Wert: 30   Type: float
+
+-3u ==  UINT_MAX  - 2
+Wert: 1     Type: int
+
+6 == (13 % 7) && (0 != 1)
+Wert: 1     Type: int
+
+0.1f + 0.2f == 0.3
+Wert: 0 (Nachkommerstellen von float > double)     Type: int
+
+(1u << 2u) == 4
+Wert: 1     Type: int
+
+(16  >> 1) != 8 
+Wert: 0     Type: int
+
+’D’ % ’B’ == 3 ? 0 : 1
+Wert: 1 (Vermutung Ascii Codierung)     Type: int
+
+(1 << 0) & 1
+Wert: 1 (1 << 0 = 1)    Type: int
+
+(16  >> 2) & 4
+Wert: 4     Type: int
+
+INT_MAX & 0xFFFF
+Wert: 65536 (=0xFFFF)     Type: int
+
+12 | 5 ^ 4 & 3
+Wert: 13     Type: int
+
+!∼(INT_MAX  - 2) + 8 > 1 << 3
+Wert: 0     Type: int
+    1. INT_MAX  - 2 = 1...01
+    2. ∼(INT_MAX  - 2) = 0...10
+    3. !∼(INT_MAX  - 2) = 0 (Ist > 0)
+    4. 0 + 8 = 8
+    5. 1 << 3 = 8
+    6. 8 > 8 = 0
