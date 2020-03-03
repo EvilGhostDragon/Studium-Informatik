@@ -1,0 +1,77 @@
+1)
+Linux Mint 19.2 Cinnamon
+
+2)
+Allgemein: GCC - GNU Compiler Collection
+Befehl gcc: GNU C Compiler
+-> somit ist gcc als C Compliler zu verstehen.
+C Source Code muss, um auf einem System ausgeführt werden zu können, zuerst compiliert werden -> gcc
+
+Alternativen: zB clang auf MacOS
+
+3)
+$gcc --version
+  gcc (Ubuntu 7.4.0-1ubuntu1~18.04.1) 7.4.0
+  Copyright (C) 2017 Free Software Foundation, Inc.
+  This is free software; see the source for copying conditions.  There is NO
+  warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+-> Version: 7.4.0
+
+4)
+Neuste Version meines OS wurde mit der neusten gcc version übersetzt:
+$ dmesg | head -1
+ Linux version 5.3.5-050305-generic (kernel@sita) (gcc version 9.2.1 20190909 (Ubuntu 9.2.1-8ubuntu1))
+
+-> vgl. Wikipedia: v9.2
+
+
+5)
+C Source Code wird vom Menschen geschrieben und ist daher auch für den Menschen verständlich und lesbar jedoch nicht für den Computer.
+Executable sind ausführbare Programme -> Compilierter Souce Code -> dieser ist nicht mehr für den Menschen verständlich, jedoch für den Computer.
+
+
+6)
+Vorgang von c Source Code zum Executable:
+
+Source Code \
+            Pre Processor
+            /           |
+Pre-precessed Code      |
+            \          /
+            Compiler
+            /          \
+Assambly Code           |
+            \          /
+            Assembler
+            /          \
+Machine Code            |
+(ohne librarys verlinkt)|
+            \          /
+            Linker
+            /
+Executable
+
+
+gcc Compiliert nicht nur sonder vollführt all die gannnten Schritte
+Notwendig: Source Code kann ist nicht verständlich für den Computer
+            zB. printf:
+                  Source Code: Funktionsaufruf der Library "stdio"
+                  Executable: Anweisung Variable vom Speicher zu laden und am Bildschirm auszugeben
+           -> übersetzten von Menschlicher Sprache in Computer Sprache (Machinecode)
+
+
+7)
+Anzeige aller Warnungen. Manche Warnungen von gcc werden standardmäßig nicht ausgegeben
+
+
+8)
+   #include <stdio.h>      //Inkludierung der "stdio" Library -> Wird für den Funktionsaufruf "prinf" benötigt.
+3   int main() {            //Begin der Hauptfunktion - input: void / output: int
+4   char sAdd[8] = "World"; //Deklaration der Variable sAdd als Charset mit der Größe 8 + Zuweisung des Strings "World"
+5   printf("Hello\n%s\n", sAdd);  // Aufruf der Funtion "prinf" (Input: "Hello" + sAdd /output: void) - \n Anweisung fürs Terminal: in neue Zeile springen - %s Einbindung der Strings sAdd
+6   return 0;}               //Programm wurde erfolgreich Durchgeführt und beendet
+
+
+9)
+./executable
